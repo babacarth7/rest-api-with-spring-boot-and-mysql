@@ -1,12 +1,14 @@
 package com.babacarthiam.taskmanager.services;
 
-import com.babacarthiam.taskmanager.entities.Task;
-import com.babacarthiam.taskmanager.repositories.TaskRepository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+
 import org.springframework.stereotype.Service;
+
+import com.babacarthiam.taskmanager.entities.Task;
+import com.babacarthiam.taskmanager.repositories.TaskRepository;
 
 @Service
 public class TaskService {
@@ -38,4 +40,5 @@ public class TaskService {
   public void delete(UUID id) {
     taskRepository.deleteById(id);
   }
+
 }
